@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Punchy Kids Palette */
+  --color-sky-blue: #4CC9F0;
+  --color-sunshine-yellow: #FFD60A;
+  --color-fantasy-purple: #7209B7;
+  --color-magic-pink: #F72585;
+  --color-apple-green: #4D9632;
+  --color-active-blue: #3A0CA3;
+  --color-cloud-blue: #F0F7FF;
+  --color-dark-gray: #1A1A1A;
+  --color-medium-gray: #4A4A4A;
+
+  /* Typography */
+  --font-fredoka: "Fredoka", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+
+  /* Enhanced Border Radius */
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+
+  /* Punchy Shadows */
+  --shadow-punchy: 0 20px 25px -5px rgba(58, 12, 163, 0.1), 0 8px 10px -6px rgba(58, 12, 163, 0.1);
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply font-nunito text-dark-gray bg-white;
+  }
+}
+
+/* Magic Utilities */
+.magic-gradient-purple {
+  background: linear-gradient(135deg, #7209B7 0%, #3A0CA3 100%);
+}
+
+.magic-gradient-pink {
+  background: linear-gradient(135deg, #F72585 0%, #7209B7 100%);
+}
+
+.magic-blur {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.7);
+}

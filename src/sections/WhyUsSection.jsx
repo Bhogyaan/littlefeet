@@ -13,10 +13,10 @@ const features = [
 
 export const WhyUsSection = () => {
     return (
-        <section id="why-us" className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <section id="why-us" className="py-1 md:py-4 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12 md:mb-20">
-                    <h2 className="text-3xl md:text-5xl font-bold font-fredoka text-dark-gray mb-6">
+                    <h2 className="text-3xl md:text-5xl font-bold font-fredoka text-dark-gray mb-2">
                         Our <span className="text-magic-pink">Vision</span> & <span className="text-fantasy-purple">Mission</span>
                     </h2>
                     <p className="text-xl md:text-2xl text-medium-gray font-nunito max-w-3xl mx-auto leading-relaxed font-bold">
@@ -24,7 +24,7 @@ export const WhyUsSection = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10 items-center mb-16 md:mb-4">
                     <div className="space-y-6 md:space-y-8">
                         <h3 className="text-2xl md:text-3xl font-bold font-fredoka text-dark-gray">Our Approach</h3>
                         <p className="text-base md:text-lg text-medium-gray font-nunito leading-relaxed">

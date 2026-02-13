@@ -102,7 +102,7 @@ export const INKProgramSection = () => {
                         {/* Image with subtle overlay */}
                         <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
                             <img
-                                src="/assets/imgs/INK-image.jpg" // ← replace with real INK program image
+                                src="/assets/imgs/INK-Image.webp" 
                                 alt="Children exploring in INK program"
                                 loading="lazy"
                                 className="w-full h-auto object-cover aspect-[5/5]"

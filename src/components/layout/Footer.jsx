@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Heart, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Heart, Facebook, Instagram, Twitter, PhoneCallIcon } from 'lucide-react';
 
 export const Footer = () => {
     return (
@@ -8,16 +8,21 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div className="col-span-1 md:col-span-1">
-                        <Link to="/" className="flex items-center gap-3 mb-6">
-                            <div className="w-10 h-10 magic-gradient-pink rounded-xl flex items-center justify-center shadow-lg">
-                                <Heart className="text-white w-6 h-6 fill-current" />
+                        <Link to="/" className="flex items-center gap-2 mb-4">
+                            <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+                                <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
                             </div>
-                            <span className="text-2xl font-bold font-fredoka text-dark-gray">
-                                Little Feet<span className="text-magic-pink">Creche</span>
-                            </span>
+                            <div className="flex flex-col justify-center">
+                                <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none">
+                                    Little Feet <span className="text-active-blue">Creche</span>
+                                </span>
+                                <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
+                                    Caring Kids with Love & <span className="text-base leading-none">🧸</span> Passion
+                                </span>
+                            </div>
                         </Link>
-                        <p className="text-medium-gray font-nunito leading-relaxed">
-                            Caring Kids with Love & Passion. A Home Away from Home for your little ones in Salem.
+                        <p className="text-medium-gray font-nunito leading-relaxed text-sm">
+                            A Home Away from Home for your little ones in Salem.
                         </p>
                     </div>
 
@@ -37,9 +42,15 @@ export const Footer = () => {
                         <h4 className="font-fredoka text-lg font-bold text-dark-gray mb-4">Contact Us</h4>
                         <ul className="space-y-3 font-nunito text-medium-gray">
                             <li className="flex items-center gap-3">
-                                <Phone size={18} className="text-apple-green" />
-                                <span>+91 427 3595271</span>
+                                <PhoneCallIcon size={18} className="text-apple-green mt-1" />
+
+                                <div className="flex flex-col">
+
+                                    <span>+91 427 3595271</span>
+                                    <span>+91 6381318593 </span>
+                                </div>
                             </li>
+
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-sky-blue" />
                                 <span>devaranipadma@gmail.com</span>

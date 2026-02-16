@@ -1,4 +1,4 @@
-import { Link, useLocation  } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Heart } from 'lucide-react';
@@ -8,7 +8,6 @@ const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Why Us', href: '/why-us' },
     { name: 'About', href: '/about' },
-    { name: 'Gallery', href: '/gallery' },
     { name: 'Enroll', href: '/enroll' },
     { name: 'FAQ', href: '/faq' },
 ];
@@ -22,13 +21,18 @@ export const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <Link to="/" className="flex items-center gap-3">
-                        <div className="w-12 h-12 magic-gradient-pink rounded-2xl flex items-center justify-center shadow-punchy rotate-6">
-                            <Heart className="text-white w-7 h-7 fill-current" />
+                    <Link to="/" className="flex items-center gap-2">
+                        <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+                            <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
                         </div>
-                        <span className="text-2xl font-bold font-fredoka tracking-tight text-dark-gray bg-clip-text">
-                            Little Feet<span className="text-magic-pink">Creche</span>
-                        </span>
+                        <div className="flex flex-col justify-center">
+                            <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none">
+                                Little Feet <span className="text-active-blue">Creche</span>
+                            </span>
+                            <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
+                                Caring Kids with Love & <span className="text-base leading-none">🧸</span> Passion
+                            </span>
+                        </div>
                     </Link>
 
                     {/* Desktop Nav */}
@@ -43,9 +47,9 @@ export const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                        <Link to="/enroll">
+                        {/* <Link to="/enroll">
                             <Button size="sm">Register Now</Button>
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -81,9 +85,9 @@ export const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Link to="/enroll" onClick={() => setIsOpen(false)}>
+                            {/* <Link to="/enroll" onClick={() => setIsOpen(false)}>
                                 <Button className="w-full">Register Now</Button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </motion.div>
                 )}

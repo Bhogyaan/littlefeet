@@ -54,12 +54,12 @@ export const EnrollmentSection = () => {
                                 </div>
                             </div>
 
-                            <Button
+                            {/* <Button
                                 size="lg"
                                 className="magic-gradient-pink text-white w-full sm:w-auto px-8 py-5 rounded-3xl text-base md:text-lg shadow-lg hover:scale-105 transition-transform flex items-center justify-center gap-3"
                             >
                                 Schedule Your Visit <ArrowRight size={20} />
-                            </Button>
+                            </Button> */}
                         </div>
 
                         {/* Right - Image */}

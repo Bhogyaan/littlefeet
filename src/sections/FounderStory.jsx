@@ -7,7 +7,7 @@ export const FounderStory = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <section id="about" className={`relative bg-white overflow-hidden ${!isHomePage ? 'py-20 md:py-28' : ''}`}>
+        <section id="about" className={`relative bg-white overflow-hidden ${!isHomePage ? 'py-12 md:py-10' : ''}`}>
             {/* Banner Image - Only show on Home page */}
             {isHomePage && (
                 <div className="w-full h-64 md:h-80 relative">
@@ -22,7 +22,7 @@ export const FounderStory = () => {
 
             <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? '' : '-mt-20'}`}>
                 {/* Section Header */}
-                <div className="text-center mb-16 md:mb-24">
+                <div className="text-center mb-12 md:mb-6">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -33,14 +33,14 @@ export const FounderStory = () => {
                         <span>The Heart Behind Little Feet</span>
                     </motion.div>
 
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-fredoka text-dark-gray leading-tight mb-6">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-fredoka text-dark-gray leading-tight mb-4">
                         Meet Our Founder
                     </h2>
                     <div className="w-24 h-1.5 bg-gradient-to-r from-magic-pink to-fantasy-purple rounded-full mx-auto" />
                 </div>
 
                 {/* Main Profile Area */}
-                <div className="max-w-4xl mx-auto mb-24">
+                <div className="max-w-4xl mx-auto mb-16 md:mb-20">
                     {/* Bio & Credentials */}
                     <div className="space-y-10 text-center">
                         <motion.div
@@ -48,10 +48,10 @@ export const FounderStory = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            <h3 className="text-3xl md:text-5xl font-bold font-fredoka text-fantasy-purple mb-4">
+                            <h3 className="text-2xl md:text-4xl font-bold font-fredoka text-fantasy-purple mb-3">
                                 Devarani Ramachandran
                             </h3>
-                            <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed mb-6">
+                            <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed mb-4">
                                 A multifaceted soul: <span className="text-dark-gray font-semibold">IT Professional, Working Mother, and Holistic Healer.</span>
                             </p>
                             <p className="text-base md:text-lg text-medium-gray font-nunito leading-relaxed">
@@ -107,15 +107,15 @@ export const FounderStory = () => {
                     viewport={{ once: true }}
                     className="max-w-5xl mx-auto"
                 >
-                    <div className="bg-gradient-to-br from-fantasy-purple to-active-blue rounded-[3rem] p-8 md:p-14 text-center text-white relative overflow-hidden shadow-punchy">
+                    <div className="bg-gradient-to-br from-fantasy-purple to-active-blue rounded-[2.5rem] p-8 md:p-12 text-center text-white relative overflow-hidden shadow-punchy">
                         <Quote className="absolute top-8 left-8 text-white/20" size={64} />
                         <Quote className="absolute bottom-8 right-8 text-white/20 rotate-180" size={64} />
 
                         <div className="relative z-10">
-                            <h3 className="text-2xl md:text-3xl font-bold font-fredoka mb-6 leading-snug">
+                            <h3 className="text-2xl md:text-3xl font-bold font-fredoka mb-4 leading-snug">
                                 "Every woman has the strength to grow. We exist to support that growth."
                             </h3>
-                            <p className="text-lg md:text-xl font-nunito opacity-90 mb-8 max-w-3xl mx-auto">
+                            <p className="text-lg md:text-xl font-nunito opacity-90 mb-6 max-w-3xl mx-auto">
                                 Little Feet Creche is not just a facility; it's a promise—to support striving mothers and nurture the emotional balance of every child.
                             </p>
                             <div className="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full border border-white/30 text-sm font-semibold tracking-wide uppercase">

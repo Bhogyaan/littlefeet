@@ -14,8 +14,8 @@ export const HomePage = () => {
             transition={{ duration: 0.5 }}
         >
             <Hero />
-            <WhyUsSection />
             <INKProgramSection />
+            <WhyUsSection />
             <CalendarSection />
             <EventsSection />
 

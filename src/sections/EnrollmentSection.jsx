@@ -4,12 +4,12 @@ import { Button } from '../components/ui/Button';
 
 export const EnrollmentSection = () => {
     return (
-        <section id="contact" className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <section id="contact" className="py-12 md:py-16 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="rounded-3xl shadow-xl border border-gray-100/50 overflow-hidden bg-gradient-to-br from-cloud-blue/10 to-white">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center p-6 md:p-12 lg:p-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center p-6 md:p-10 lg:p-12">
                         {/* Left - Content */}
-                        <div className="space-y-8 md:space-y-10">
+                        <div className="space-y-6 md:space-y-8">
                             <h2 className="text-3xl md:text-4xl font-bold font-fredoka text-dark-gray leading-tight">
                                 Book a Visit for a <br />
                                 <span className="text-magic-pink">Tour / Trial Day</span>
@@ -80,21 +80,21 @@ export const EnrollmentSection = () => {
                     </div>
 
                     {/* Inside views gallery */}
-                    <div className="p-6 md:p-12 lg:p-16 border-t border-gray-100">
-                        <div className="flex items-center gap-6 mb-8 md:mb-12">
+                    <div className="p-6 md:p-10 lg:p-12 border-t border-gray-100">
+                        <div className="flex items-center gap-4 mb-6 md:mb-8">
                             <div className="h-1 flex-grow bg-gradient-to-r from-transparent via-active-blue/20 to-transparent" />
-                            <h3 className="font-fredoka text-2xl md:text-3xl text-dark-gray text-center px-6">Inside Little Feet Creche</h3>
+                            <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet Creche</h3>
                             <div className="h-1 flex-grow bg-gradient-to-r from-active-blue/20 via-active-blue/20 to-transparent" />
                         </div>
 
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
                             {[1, 2, 3, 4, 5, 6].map((i) => (
                                 <div
                                     key={i}
                                     className="rounded-3xl overflow-hidden shadow-md aspect-square border-4 border-white group"
                                 >
                                     <img
-                                        src={`/assets/imgs/BannerImage ${i}.jpg`}
+                                        src={`/assets/imgs/img-${i}.png`}
                                         alt={`Creche interior view ${i}`}
                                         loading="lazy"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

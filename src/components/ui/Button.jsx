@@ -28,7 +28,7 @@ export const Button = ({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={twMerge(
-                'rounded-2xl font-fredoka font-medium transition-colors',
+                'rounded-full font-fredoka font-medium transition-colors',
                 variants[variant],
                 sizes[size],
                 className

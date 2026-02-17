@@ -64,7 +64,7 @@ export const WhyUsSection = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <section id="why-us" className="relative bg-cloud-blue/10 overflow-hidden pb-24 md:pb-32">
+        <section id="why-us" className="relative bg-cloud-blue/10 overflow-hidden pb-16 md:pb-24">
             {/* Banner Image - Only show on Home page */}
             {isHomePage && (
                 <div className="w-full h-72 md:h-96 relative">
@@ -89,28 +89,28 @@ export const WhyUsSection = () => {
                 </div>
             )}
 
-            <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? 'pt-20 md:pt-28' : 'mt-16 md:mt-24'}`}>
+            <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? 'pt-16 md:pt-24' : 'mt-12 md:mt-16'}`}>
 
                 {/* Vision & Mission - Clean Card */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="bg-white rounded-[3rem] p-8 md:p-16 shadow-xl border border-gray-100 text-center max-w-4xl mx-auto mb-24 relative overflow-hidden"
+                    className="bg-white rounded-[2.5rem] p-6 md:p-12 shadow-xl border border-gray-100 text-center max-w-4xl mx-auto mb-16 md:mb-20 relative overflow-hidden"
                 >
                     <div className="absolute top-0 right-0 w-64 h-64 bg-fantasy-purple/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                     <div className="relative z-10">
                         <span className="text-fantasy-purple font-nunito font-bold tracking-widest uppercase text-sm mb-4 block">Our Core Purpose</span>
-                        <h3 className="text-2xl md:text-4xl font-bold font-fredoka text-dark-gray leading-tight mb-8">
+                        <h3 className="text-xl md:text-3xl font-bold font-fredoka text-dark-gray leading-tight mb-6">
                             "To empower children by <span className="text-magic-pink px-2 bg-magic-pink/5 rounded-lg">preserving and nurturing</span> their inner child."
                         </h3>
-                        <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-12">
-                            <div className="flex items-center justify-center gap-3 text-medium-gray font-nunito font-semibold">
-                                <span className="w-10 h-10 rounded-full bg-sunshine-yellow/10 flex items-center justify-center text-sunshine-yellow"><Sparkles size={20} /></span>
+                        <div className="flex flex-row justify-center gap-4 md:gap-12">
+                            <div className="flex items-center justify-center gap-2 md:gap-3 text-medium-gray font-nunito font-semibold text-sm md:text-base">
+                                <span className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-sunshine-yellow/10 flex items-center justify-center text-sunshine-yellow"><Sparkles size={18} /></span>
                                 Vision
                             </div>
-                            <div className="flex items-center justify-center gap-3 text-medium-gray font-nunito font-semibold">
-                                <span className="w-10 h-10 rounded-full bg-apple-green/10 flex items-center justify-center text-apple-green"><Feather size={20} /></span>
+                            <div className="flex items-center justify-center gap-2 md:gap-3 text-medium-gray font-nunito font-semibold text-sm md:text-base">
+                                <span className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-apple-green/10 flex items-center justify-center text-apple-green"><Feather size={18} /></span>
                                 Mission
                             </div>
                         </div>
@@ -118,7 +118,7 @@ export const WhyUsSection = () => {
                 </motion.div>
 
                 {/* Main content - Approach */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center mb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center mb-16 md:mb-20">
                     {/* Left column */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
@@ -126,10 +126,10 @@ export const WhyUsSection = () => {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <h3 className="text-3xl md:text-5xl font-bold font-fredoka text-dark-gray leading-tight">
+                        <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold font-fredoka text-dark-gray leading-tight">
                             Our Unique <span className="text-fantasy-purple decoration-wavy underline decoration-magic-pink/30">Approach</span>
                         </h3>
-                        <div className="space-y-6 text-lg text-medium-gray font-nunito leading-relaxed">
+                        <div className="space-y-4 text-base md:text-lg text-medium-gray font-nunito leading-relaxed">
                             <p>
                                 Life isn’t just about using the whole box of crayons.
                                 It’s about deeply experiencing <span className="text-magic-pink font-bold">colour pencils, water colours, oil paints</span> and different brushes too.
@@ -162,7 +162,7 @@ export const WhyUsSection = () => {
                 </div>
 
                 {/* Features Grid - Clean & Uniform */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-8 md:mb-12">
                     <h3 className="text-3xl font-bold font-fredoka text-dark-gray">Why Parents Choose Us</h3>
                 </div>
 

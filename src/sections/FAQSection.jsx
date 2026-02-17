@@ -39,16 +39,16 @@ export const FAQSection = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section id="faq" className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <section id="faq" className="py-12 md:py-16 bg-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="text-center mb-12 md:mb-16">
+                <div className="text-center mb-10 md:mb-12">
                     <div className="inline-flex items-center justify-center w-14 h-14 bg-magic-pink/10 rounded-3xl text-magic-pink mb-6 shadow-sm">
-                        <HelpCircle size={28} />
+                        <HelpCircle size={24} />
                     </div>
-                    <h2 className="text-3xl md:text-4xl font-bold font-fredoka text-dark-gray mb-6">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-fredoka text-dark-gray mb-4">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-base md:text-lg text-medium-gray font-nunito leading-relaxed max-w-2xl mx-auto">
                         Clear answers to help you understand how we care for your child.
                     </p>
                 </div>
@@ -57,13 +57,13 @@ export const FAQSection = () => {
                     {faqs.map((faq, i) => (
                         <div
                             key={i}
-                            className={`rounded-3xl border transition-all duration-300 overflow-hidden ${openIndex === i ? 'border-active-blue bg-cloud-blue/30 shadow-md' : 'border-gray-200 hover:border-gray-300 bg-white'}`}
+                            className={`rounded-[2rem] border transition-all duration-300 overflow-hidden ${openIndex === i ? 'border-active-blue bg-cloud-blue/30 shadow-md' : 'border-gray-200 hover:border-gray-300 bg-white'}`}
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
-                                className="w-full p-6 md:p-7 text-left flex justify-between items-center gap-4 md:gap-6"
+                                className="w-full p-5 md:p-6 text-left flex justify-between items-center gap-4 md:gap-6"
                             >
-                                <span className={`font-bold font-fredoka text-base md:text-xl ${openIndex === i ? 'text-active-blue' : 'text-dark-gray'}`}>
+                                <span className={`font-bold font-fredoka text-base md:text-lg ${openIndex === i ? 'text-active-blue' : 'text-dark-gray'}`}>
                                     {faq.question}
                                 </span>
                                 <motion.div
@@ -84,7 +84,7 @@ export const FAQSection = () => {
                                         transition={{ duration: 0.3 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-6 md:px-7 pb-6 md:pb-7 text-base md:text-lg text-medium-gray font-nunito leading-relaxed border-t border-gray-200">
+                                        <div className="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-medium-gray font-nunito leading-relaxed border-t border-gray-200">
                                             {faq.answer}
                                         </div>
                                     </motion.div>
@@ -95,10 +95,10 @@ export const FAQSection = () => {
                 </div>
 
                 {/* Inside views */}
-                <div className="mt-16 md:mt-24">
-                    <div className="flex items-center gap-6 mb-8 md:mb-12">
+                <div className="mt-12 md:mt-16">
+                    <div className="flex items-center gap-4 mb-6 md:mb-8">
                         <div className="h-1 flex-grow bg-gradient-to-r from-transparent via-active-blue/20 to-transparent" />
-                        <h3 className="font-fredoka text-2xl md:text-3xl text-dark-gray text-center px-6">Inside Little Feet Creche</h3>
+                        <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet Creche</h3>
                         <div className="h-1 flex-grow bg-gradient-to-r from-active-blue/20 via-active-blue/20 to-transparent" />
                     </div>
 

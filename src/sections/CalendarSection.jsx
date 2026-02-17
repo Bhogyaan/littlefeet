@@ -40,7 +40,7 @@ export const CalendarSection = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <section id="calendar" className={`relative bg-white overflow-hidden pb-20 md:pb-28 ${!isHomePage ? 'pt-20 md:pt-28' : ''}`}>
+        <section id="calendar" className={`relative bg-white overflow-hidden pb-16 md:pb-20 ${!isHomePage ? 'pt-12 md:pt-16' : ''}`}>
             {/* Banner Image - Only show on Home page */}
             {isHomePage && (
                 <div className="w-full h-64 md:h-80 relative">
@@ -55,20 +55,20 @@ export const CalendarSection = () => {
 
             <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? '' : '-mt-10'}`}>
                 {/* Header */}
-                <div className="text-center mb-16 md:mb-24">
+                <div className="text-center mb-12 md:mb-16">
                     <motion.div
                         initial={{ scale: 0.9, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
-                        className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full border border-gray-100 shadow-sm mb-8"
+                        className="inline-flex items-center gap-3 px-5 py-2.5 bg-white rounded-full border border-gray-100 shadow-sm mb-6"
                     >
-                        <CalendarIcon size={20} className="text-magic-pink" />
-                        <span className="font-nunito font-bold text-active-blue">Here All 365 days are not the same</span>
+                        <CalendarIcon size={18} className="text-magic-pink" />
+                        <span className="font-nunito font-bold text-active-blue text-sm md:text-base">Here All 365 days are not the same</span>
                     </motion.div>
 
                     <motion.h2
                         initial={{ y: 20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        className="text-4xl sm:text-5xl lg:text-6xl font-bold font-fredoka text-dark-gray leading-tight mb-6"
+                        className="text-3xl sm:text-4xl lg:text-5xl font-bold font-fredoka text-dark-gray leading-tight mb-4"
                     >
                         No day will be <span className="text-magic-pink relative">
                             boredom.
@@ -84,10 +84,10 @@ export const CalendarSection = () => {
                 </div>
 
                 {/* Activities Highlights Section */}
-                <div className="mb-20">
-                    <div className="flex items-center gap-4 mb-10">
-                        <div className="p-3 bg-sunshine-yellow/20 rounded-2xl text-sunshine-yellow">
-                            <Sparkles size={32} />
+                <div className="mb-16">
+                    <div className="flex items-center gap-4 mb-8">
+                        <div className="p-2.5 bg-sunshine-yellow/20 rounded-2xl text-sunshine-yellow">
+                            <Sparkles size={28} />
                         </div>
                         <h3 className="text-3xl font-bold font-fredoka text-dark-gray">
                             Follows some mind-blowing activities:
@@ -113,10 +113,10 @@ export const CalendarSection = () => {
                 </div>
 
                 {/* Themed Days Section */}
-                <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-gray-100 relative overflow-hidden">
+                <div className="bg-white rounded-[2rem] p-6 md:p-10 shadow-xl border border-gray-100 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-magic-pink via-fantasy-purple to-active-blue" />
 
-                    <h3 className="text-3xl font-bold font-fredoka text-dark-gray mb-10 text-center md:text-left">
+                    <h3 className="text-2xl font-bold font-fredoka text-dark-gray mb-8 text-center md:text-left">
                         Follows some attractive titles:
                     </h3>
 
@@ -130,7 +130,7 @@ export const CalendarSection = () => {
                                 className={`p-4 rounded-xl border ${td.bg} ${td.border} hover:scale-105 transition-transform cursor-default flex items-center gap-3`}
                             >
                                 <div className={`${td.color}`}>
-                                    <td.icon size={20} className="fill-current opacity-20" />
+                                    <td.icon size={20} />
                                 </div>
                                 <p className="font-bold font-nunito text-dark-gray text-sm leading-snug">
                                     {td.day}

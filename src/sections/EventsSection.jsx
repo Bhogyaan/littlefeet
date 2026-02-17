@@ -1,57 +1,42 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar as CalendarIcon, ArrowRight, Loader2 } from 'lucide-react';
-import { getEvents } from '../api/strapi';
+import { Calendar as CalendarIcon, ArrowRight, Loader2, Megaphone } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const EventsSection = () => {
     const [events, setEvents] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     const location = useLocation();
     const isHomePage = location.pathname === '/';
 
     useEffect(() => {
-        const fetchEvents = async () => {
-            try {
-                setLoading(true);
-                const data = await getEvents();
-                if (data && data.length > 0) {
-                    setEvents(data);
-                } else {
-                    // Fallback static data
-                    setEvents([
-                        {
-                            id: 1,
-                            title: "Special Occasions & Icebreaking",
-                            description: "We are equally eager to have icebreaking sessions with you to hold on to your inner child along with your buddies.",
-                            date: "2026-03-20",
-                            category: "Community",
-                            image: "/assets/imgs/EventsImage1.png"
-                        },
-                        {
-                            id: 2,
-                            title: "Inspiring Speaker Sessions",
-                            description: "Fun evenings and weekends designed to spark curiosity and connection.",
-                            date: "2026-04-05",
-                            category: "Learning",
-                            image: "/assets/imgs/BannerImage3.jpg"
-                        }
-                    ]);
-                }
-            } catch (err) {
-                setError("Could not load events. Please try again later.");
-            } finally {
-                setLoading(false);
+        // Use static data directly
+        setEvents([
+            {
+                id: 1,
+                title: "Special Occasions & Icebreaking",
+                description: "We are equally eager to have icebreaking sessions with you to hold on to your inner child along with your buddies.",
+                date: "2026-03-20",
+                category: "Community",
+                image: "/assets/imgs/EventsImage1.png"
+            },
+            {
+                id: 2,
+                title: "Inspiring Speaker Sessions",
+                description: "Fun evenings and weekends designed to spark curiosity and connection.",
+                date: "2026-04-05",
+                category: "Learning",
+                image: "/assets/imgs/img-7.png"
             }
-        };
-
-        fetchEvents();
+        ]);
+        setLoading(false);
     }, []);
 
+    // Removed error handling since we're using static data only
+
     return (
-        <section id="events" className={`relative bg-white overflow-hidden pb-20 md:pb-28 ${!isHomePage ? 'pt-20 md:pt-28' : ''}`}>
+        <section id="events" className={`relative bg-white overflow-hidden pb-16 md:pb-20 ${!isHomePage ? 'pt-12 md:pt-16' : ''}`}>
             {/* Banner Image - Only show on Home page */}
             {isHomePage && (
                 <div className="w-full h-64 md:h-80 relative">
@@ -67,15 +52,15 @@ export const EventsSection = () => {
 
             <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
                 {/* Header */}
-                <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-16 gap-6">
+                <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-8 md:mb-12 gap-6">
                     <div className="text-center md:text-left">
-                        <h2 className="text-3xl md:text-4xl font-bold font-fredoka text-dark-gray mb-3">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-fredoka text-dark-gray mb-2">
                             Memorable Events too
                         </h2>
-                        <p className="text-lg text-medium-gray font-nunito max-w-2xl mb-4">
+                        <p className="text-base md:text-lg text-medium-gray font-nunito max-w-2xl mb-3">
                             Our space is opened up for parents/grandparents/relatives/friends with limited seats. We encourage attendees to have fun-filled evenings/ weekends/ special occasion.
                         </p>
-                        <p className="text-lg text-active-blue font-nunito font-semibold">
+                        <p className="text-base md:text-lg text-active-blue font-nunito font-semibold">
                             You can actively participate either as an admirer or inspirer. <span className="text-2xl">😊</span> Choice is Yours!
                         </p>
                     </div>
@@ -88,8 +73,6 @@ export const EventsSection = () => {
                     <div className="flex justify-center items-center py-20">
                         <Loader2 className="animate-spin text-sky-blue" size={48} />
                     </div>
-                ) : error ? (
-                    <p className="text-center text-red-500 font-nunito py-12">{error}</p>
                 ) : (
                     <div className="space-y-12">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -113,7 +96,7 @@ export const EventsSection = () => {
                                             {event.category || 'Event'}
                                         </div>
                                     </div>
-                                    <div className="p-6 md:p-8">
+                                    <div className="p-5 md:p-6">
                                         <div className="flex items-center gap-2 text-medium-gray text-sm font-medium mb-3">
                                             <CalendarIcon size={16} className="text-fantasy-purple" />
                                             <span>{new Date(event.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
@@ -121,7 +104,7 @@ export const EventsSection = () => {
                                         <h3 className="text-xl md:text-2xl font-bold font-fredoka text-dark-gray mb-3 group-hover:text-sky-blue transition-colors">
                                             {event.title}
                                         </h3>
-                                        <p className="text-base text-medium-gray font-nunito leading-relaxed mb-6 line-clamp-3">
+                                        <p className="text-sm md:text-base text-medium-gray font-nunito leading-relaxed mb-4 line-clamp-3">
                                             {event.description}
                                         </p>
                                         {/* <Button variant="ghost" className="p-0 hover:bg-transparent text-sky-blue font-medium flex items-center gap-2 text-sm">
@@ -132,7 +115,8 @@ export const EventsSection = () => {
                             ))}
                         </div>
                         <div className="text-center">
-                            <p className="text-xl md:text-2xl font-fredoka font-bold text-fantasy-purple mb-2 animate-bounce">
+                            <p className="text-xl md:text-2xl font-fredoka font-bold text-fantasy-purple mb-2 animate-bounce flex items-center justify-center gap-3">
+                                <Megaphone size={28} className="font-bold text-fantasy-purple" />
                                 So Stay tuned for the announcements!
                             </p>
                         </div>

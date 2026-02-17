@@ -7,13 +7,13 @@ export const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
-                    <div className="col-span-1 md:col-span-1">
+                    <div className="col-span-1 md:col-span-2">
                         <Link to="/" className="flex items-center gap-2 mb-4">
-                            <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+                            <div className="w-12 h-12 md:w-22 md:h-22 flex-shrink-0">
                                 <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
                             </div>
                             <div className="flex flex-col justify-center">
-                                <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none">
+                                <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none whitespace-nowrap">
                                     Little Feet <span className="text-active-blue">Creche</span>
                                 </span>
                                 <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
@@ -63,7 +63,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Socials */}
-                    <div>
+                    {/* <div>
                         <h4 className="font-fredoka text-lg font-bold text-dark-gray mb-4">Follow Little Feet Creche</h4>
                         <div className="flex gap-4">
                             {[Instagram, Facebook, Twitter].map((Icon, i) => (
@@ -76,7 +76,7 @@ export const Footer = () => {
                                 </a>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-medium-gray font-nunito">

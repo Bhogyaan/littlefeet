@@ -7,7 +7,7 @@ export const INKProgramSection = () => {
     const isHomePage = location.pathname === '/';
 
     return (
-        <section id="ink" className={`relative bg-white overflow-hidden pb-24 md:pb-32 ${!isHomePage ? 'pt-20 md:pt-28' : ''}`}>
+        <section id="ink" className={`relative bg-white overflow-hidden pb-16 md:pb-20 ${!isHomePage ? 'pt-12 md:pt-16' : ''}`}>
             {/* Banner Image - Only show on Home page */}
             {isHomePage && (
                 <div className="w-full h-72 md:h-96 relative">
@@ -35,10 +35,10 @@ export const INKProgramSection = () => {
                 </div>
             )}
 
-            <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? '' : 'mt-12 md:mt-16'}`}>
+            <div className={`max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 ${!isHomePage ? '' : 'mt-8 md:mt-12'}`}>
 
                 {/* Core Definition */}
-                <div className="text-center max-w-4xl mx-auto mb-20 md:mb-24">
+                <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export const INKProgramSection = () => {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start mb-16 md:mb-20">
                     {/* Left: Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
@@ -130,9 +130,9 @@ export const INKProgramSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-center max-w-5xl mx-auto"
+                    className="mt-12 md:mt-16 text-center max-w-5xl mx-auto"
                 >
-                    <div className="p-8 md:p-12 bg-gradient-to-br from-active-blue to-fantasy-purple rounded-[2.5rem] shadow-xl text-white relative overflow-hidden">
+                    <div className="p-6 md:p-10 bg-gradient-to-br from-active-blue to-fantasy-purple rounded-[2rem] shadow-xl text-white relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                             <div className="text-left space-y-4 flex-1">

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 
 import { Heart } from 'lucide-react';
-import wavingHand from '../../../public/assets/anis/Wavey Birdie.json';
+import wavingHand from '../../../public/assets/anis/Wavey-Birdie.json';
 
 export const Hero = () => {
   return (
@@ -46,13 +46,12 @@ export const Hero = () => {
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-fredoka leading-tight text-dark-gray flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-2">
               Hi
-              <span className="inline-block w-12 h-12 md:w-16 md:h-16 -my-1">
+              <span className="inline-block w-12 h-12 md:w-19 md:h-19 -my-1">
                 <Lottie animationData={wavingHand} loop autoplay speed={1.1} />
               </span>
               <span className="text-magic-pink">Moms & Grannies</span>
-              <br className="sm:hidden" />
               with different Hats, <br />
-              Want to extend your “My Time”?
+              Want to extend your <span className="text-active-blue">"My Time"</span>?
             </h1>
 
             <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -93,7 +92,7 @@ export const Hero = () => {
               {/* Main Image */}
               <div className="rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src="/assets/imgs/BannerImage 4.jpg"
+                  src="/assets/imgs/img-7.png"
                   alt="Happy children at Little Feet Creche"
                   className="w-full h-auto object-cover max-h-[70vh]"
                 />

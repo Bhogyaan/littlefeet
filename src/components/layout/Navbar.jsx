@@ -22,7 +22,7 @@ export const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2">
-                        <div className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
+                        <div className="w-12 h-12 md:w-18 md:h-19 flex-shrink-0">
                             <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col justify-center">

@@ -17,7 +17,7 @@ export const Navbar = () => {
     const location = useLocation();
 
     return (
-        <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm rounded-b-xl border-b border-cloud-blue/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}

@@ -127,7 +127,7 @@ export const CalendarSection = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: i * 0.05 }}
-                                className={`p-4 rounded-xl border ${td.bg} ${td.border} hover:scale-105 transition-transform cursor-default flex items-center gap-3`}
+                                className={`p-4 rounded-xl border ${td.bg} ${td.border} hover:scale-105 transition-transform cursor-default flex flex-col items-center text-center gap-3 w-full`}
                             >
                                 <div className={`${td.color}`}>
                                     <td.icon size={20} />

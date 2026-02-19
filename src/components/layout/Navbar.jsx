@@ -27,7 +27,7 @@ export const Navbar = () => {
                         </div>
                         <div className="flex flex-col justify-center">
                             <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none">
-                                Little Feet <span className="text-active-blue">crèche</span>
+                                Little Feet <span className="text-active-blue">Crèche</span>
                             </span>
                             <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
                                 Caring Kids with Love & <span className="text-base leading-none">🧸</span> Passion

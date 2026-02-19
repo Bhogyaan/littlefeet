@@ -109,7 +109,7 @@ export const FAQSection = () => {
                                 className="rounded-3xl overflow-hidden shadow-md aspect-[4/3] border-4 border-white"
                             >
                                 <img
-                                    src={`/assets/imgs/BannerImage ${i}.jpg`}
+                                    src={`/assets/imgs/img-${i}.png`}
                                     alt={`crèche interior ${i}`}
                                     loading="lazy"
                                     className="w-full h-full object-cover"

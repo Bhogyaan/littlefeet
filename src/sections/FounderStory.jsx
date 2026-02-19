@@ -75,7 +75,7 @@ export const FounderStory = () => {
                                     Her Journey
                                 </h4>
                                 <p className="text-medium-gray font-nunito leading-relaxed relative z-10">
-                                    As a working mother herself, she walked the tightrope between career ambitions and family responsibilities. She knows the guilt, the rush, and the profound need for a support system—because she lived it. This creche is her way of paying forward the support she once received.
+                                    As a working mother herself, she walked the tightrope between career ambitions and family responsibilities. She knows the guilt, the rush, and the profound need for a support system—because she lived it. This crèche is her way of paying forward the support she once received.
                                 </p>
                             </motion.div>
 
@@ -93,7 +93,7 @@ export const FounderStory = () => {
                                     The Inspiration
                                 </h4>
                                 <p className="text-medium-gray font-nunito leading-relaxed relative z-10">
-                                    Little Feet Creche is a tribute to the "Village" that raised her children—her mother, teachers, and the kind women who stepped in when needed. It’s built on gratitude and designed to be that village for you.
+                                    Little Feet crèche is a tribute to the "Village" that raised her children—her mother, teachers, and the kind women who stepped in when needed. It’s built on gratitude and designed to be that village for you.
                                 </p>
                             </motion.div>
                         </div>
@@ -116,7 +116,7 @@ export const FounderStory = () => {
                                 "Every woman has the strength to grow. We exist to support that growth."
                             </h3>
                             <p className="text-lg md:text-xl font-nunito opacity-90 mb-6 max-w-3xl mx-auto">
-                                Little Feet Creche is not just a facility; it's a promise—to support striving mothers and nurture the emotional balance of every child.
+                                Little Feet crèche is not just a facility; it's a promise—to support striving mothers and nurture the emotional balance of every child.
                             </p>
                             <div className="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full border border-white/30 text-sm font-semibold tracking-wide uppercase">
                                 Your Satisfaction ↔ Our Success

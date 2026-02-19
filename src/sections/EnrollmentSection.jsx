@@ -16,7 +16,7 @@ export const EnrollmentSection = () => {
                             </h2>
 
                             <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed">
-                                Easy paperwork via mobile. Come join the <span className="text-fantasy-purple font-bold">Little Feet Creche</span> family in Salem.
+                                Easy paperwork via mobile. Come join the <span className="text-fantasy-purple font-bold">Little Feet crèche</span> family in Salem.
                             </p>
 
                             <div className="space-y-6 md:space-y-8">
@@ -25,7 +25,7 @@ export const EnrollmentSection = () => {
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold font-fredoka text-dark-gray text-lg mb-1">Little Feet Creche</h4>
+                                        <h4 className="font-bold font-fredoka text-dark-gray text-lg mb-1">Little Feet crèche</h4>
                                         <p className="text-base md:text-lg text-dark-gray font-nunito leading-relaxed">
                                             #624, First Floor, Marimuthu Gounder Street, <br />
                                             Vanniyar Nagar, Salem, <br />
@@ -83,7 +83,7 @@ export const EnrollmentSection = () => {
                     <div className="p-6 md:p-10 lg:p-12 border-t border-gray-100">
                         <div className="flex items-center gap-4 mb-6 md:mb-8">
                             <div className="h-1 flex-grow bg-gradient-to-r from-transparent via-active-blue/20 to-transparent" />
-                            <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet Creche</h3>
+                            <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet crèche</h3>
                             <div className="h-1 flex-grow bg-gradient-to-r from-active-blue/20 via-active-blue/20 to-transparent" />
                         </div>
 
@@ -95,7 +95,7 @@ export const EnrollmentSection = () => {
                                 >
                                     <img
                                         src={`/assets/imgs/img-${i}.png`}
-                                        alt={`Creche interior view ${i}`}
+                                        alt={`crèche interior view ${i}`}
                                         loading="lazy"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />

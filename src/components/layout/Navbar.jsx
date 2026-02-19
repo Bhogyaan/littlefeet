@@ -23,11 +23,11 @@ export const Navbar = () => {
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2">
                         <div className="w-12 h-12 md:w-18 md:h-19 flex-shrink-0">
-                            <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
+                            <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet crèche Logo" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col justify-center">
                             <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none">
-                                Little Feet <span className="text-active-blue">Creche</span>
+                                Little Feet <span className="text-active-blue">crèche</span>
                             </span>
                             <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
                                 Caring Kids with Love & <span className="text-base leading-none">🧸</span> Passion

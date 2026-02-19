@@ -22,7 +22,7 @@ export const GallerySection = () => {
                         Our Magical <span className="text-apple-green">Moments</span>
                     </h2>
                     <p className="text-base md:text-lg text-medium-gray font-nunito max-w-2xl mx-auto">
-                        Take a peek into the daily lives of our little dreamers and the adventures they embark upon at <span className="text-apple-green font-bold">Little Feet Creche</span>.
+                        Take a peek into the daily lives of our little dreamers and the adventures they embark upon at <span className="text-apple-green font-bold">Little Feet crèche</span>.
                     </p>
                 </div>
 

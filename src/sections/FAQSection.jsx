@@ -14,7 +14,7 @@ const faqs = [
         color: "text-sky-blue"
     },
     {
-        question: "What is the Timings of Creche?",
+        question: "What is the Timings of crèche?",
         answer: "We are open from 8am to 7pm, Monday through Saturday. We are closed on Sundays.",
         color: "text-apple-green"
     },
@@ -98,7 +98,7 @@ export const FAQSection = () => {
                 <div className="mt-12 md:mt-16">
                     <div className="flex items-center gap-4 mb-6 md:mb-8">
                         <div className="h-1 flex-grow bg-gradient-to-r from-transparent via-active-blue/20 to-transparent" />
-                        <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet Creche</h3>
+                        <h3 className="font-fredoka text-xl md:text-2xl text-dark-gray text-center px-4">Inside Little Feet crèche</h3>
                         <div className="h-1 flex-grow bg-gradient-to-r from-active-blue/20 via-active-blue/20 to-transparent" />
                     </div>
 
@@ -110,7 +110,7 @@ export const FAQSection = () => {
                             >
                                 <img
                                     src={`/assets/imgs/BannerImage ${i}.jpg`}
-                                    alt={`Creche interior ${i}`}
+                                    alt={`crèche interior ${i}`}
                                     loading="lazy"
                                     className="w-full h-full object-cover"
                                 />

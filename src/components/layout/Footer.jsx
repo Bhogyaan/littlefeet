@@ -10,11 +10,11 @@ export const Footer = () => {
                     <div className="col-span-1 md:col-span-2">
                         <Link to="/" className="flex items-center gap-2 mb-4">
                             <div className="w-12 h-12 md:w-22 md:h-22 flex-shrink-0">
-                                <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet Creche Logo" className="w-full h-full object-contain" />
+                                <img src="/assets/imgs/Little-feet-logo.png" alt="Little Feet crèche Logo" className="w-full h-full object-contain" />
                             </div>
                             <div className="flex flex-col justify-center">
                                 <span className="text-2xl md:text-3xl font-bold font-fredoka tracking-tight text-magic-pink leading-none whitespace-nowrap">
-                                    Little Feet <span className="text-active-blue">Creche</span>
+                                    Little Feet <span className="text-active-blue">crèche</span>
                                 </span>
                                 <span className="text-[0.65rem] md:text-xs font-nunito font-bold text-medium-gray tracking-wide">
                                     Caring Kids with Love & <span className="text-base leading-none">🧸</span> Passion
@@ -64,7 +64,7 @@ export const Footer = () => {
 
                     {/* Socials */}
                     {/* <div>
-                        <h4 className="font-fredoka text-lg font-bold text-dark-gray mb-4">Follow Little Feet Creche</h4>
+                        <h4 className="font-fredoka text-lg font-bold text-dark-gray mb-4">Follow Little Feet crèche</h4>
                         <div className="flex gap-4">
                             {[Instagram, Facebook, Twitter].map((Icon, i) => (
                                 <a
@@ -81,7 +81,7 @@ export const Footer = () => {
 
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-medium-gray font-nunito">
                     <p className="text-medium-gray font-nunito">
-                        &copy; {new Date().getFullYear()} Little Feet Creche. All rights reserved.
+                        &copy; {new Date().getFullYear()} Little Feet crèche. All rights reserved.
                     </p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:underline">Privacy Policy</a>

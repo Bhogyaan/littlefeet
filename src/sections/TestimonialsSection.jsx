@@ -3,7 +3,7 @@ import { Quote, Star, Heart } from 'lucide-react';
 
 const testimonials = [
     {
-        quote: "Little Feet Creche has been a blessing for our family. My daughter loves going there every day, and I can see how much she's grown in confidence and creativity.",
+        quote: "Little Feet crèche has been a blessing for our family. My daughter loves going there every day, and I can see how much she's grown in confidence and creativity.",
         parent: "Priya Sharma",
         childAge: "4 years old",
         color: "magic-pink"
@@ -21,7 +21,7 @@ const testimonials = [
         color: "active-blue"
     },
     {
-        quote: "I appreciate the flexibility and care provided here. My mother needed support with babysitting, and Little Feet Creche has been the perfect solution for our family.",
+        quote: "I appreciate the flexibility and care provided here. My mother needed support with babysitting, and Little Feet crèche has been the perfect solution for our family.",
         parent: "Divya Krishnan",
         childAge: "7 years old",
         color: "apple-green"
@@ -58,7 +58,7 @@ export const TestimonialsSection = () => {
                     </motion.h2>
 
                     <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed max-w-3xl mx-auto">
-                        Hear from parents who have found their village at Little Feet Creche.
+                        Hear from parents who have found their village at Little Feet crèche.
                     </p>
                 </div>
 

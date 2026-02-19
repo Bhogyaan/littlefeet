@@ -93,7 +93,7 @@ export const Hero = () => {
               <div className="rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
                 <img
                   src="/assets/imgs/img-7.png"
-                  alt="Happy children at Little Feet Creche"
+                  alt="Happy children at Little Feet crèche"
                   className="w-full h-auto object-cover max-h-[70vh]"
                 />
               </div>

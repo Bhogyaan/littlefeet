@@ -46,7 +46,7 @@ export const Hero = () => {
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-fredoka leading-tight text-dark-gray flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-2">
               Hi
-              <span className="inline-block w-12 h-12 md:w-19 md:h-19 -my-1">
+              <span className="inline-block w-20 h-20 md:w-28 md:h-28 -my-2 md:-my-4 flex-shrink-0">
                 <Lottie animationData={wavingHand} loop autoplay speed={1.1} />
               </span>
               <span className="text-magic-pink">Moms & Grannies</span>

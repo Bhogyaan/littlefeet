@@ -118,8 +118,17 @@ export const FounderStory = () => {
                             <p className="text-lg md:text-xl font-nunito opacity-90 mb-6 max-w-3xl mx-auto">
                                 Little Feet crèche is not just a facility; it's a promise—to support striving mothers and nurture the emotional balance of every child.
                             </p>
-                            <div className="inline-block bg-white/20 backdrop-blur-md px-6 py-2 rounded-full border border-white/30 text-sm font-semibold tracking-wide uppercase">
-                                Your Satisfaction ↔ Our Success
+                            <div className="inline-flex flex-col gap-1 md:gap-2 bg-white/15 backdrop-blur-md px-4 md:px-10 py-4 md:py-5 rounded-full border border-white/20 text-[10px] md:text-base font-bold tracking-widest uppercase shadow-xl whitespace-nowrap">
+                                <div className="grid grid-cols-[1fr_auto_1fr] gap-2 md:gap-3 items-center w-full">
+                                    <span className="text-right text-white">Your Satisfaction</span>
+                                    <span className="text-white">↔</span>
+                                    <span className="text-left text-white">Our Success</span>
+                                </div>
+                                <div className="grid grid-cols-[1fr_auto_1fr] gap-2 md:gap-3 items-center w-full text-sunshine-yellow">
+                                    <span className="text-right">Your Success</span>
+                                    <span>↔</span>
+                                    <span className="text-left">Our Satisfaction</span>
+                                </div>
                             </div>
                         </div>
                     </div>

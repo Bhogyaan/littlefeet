@@ -122,13 +122,17 @@ export const TestimonialsSection = () => {
                     viewport={{ once: true }}
                     className="mt-12 md:mt-16 text-center"
                 >
-                    <div className="inline-block bg-gradient-to-r from-magic-pink/10 via-fantasy-purple/10 to-active-blue/10 rounded-3xl px-8 py-6 border border-fantasy-purple/20">
-                        <p className="text-xl md:text-2xl font-fredoka font-bold text-dark-gray mb-2">
-                            Join Our Happy Family! 🧸
-                        </p>
-                        <p className="text-base md:text-lg text-medium-gray font-nunito">
-                            Your satisfaction ↔ Our success
-                        </p>
+                    <div className="inline-flex flex-col gap-1 md:gap-2 bg-white/80 backdrop-blur-sm px-4 md:px-10 py-4 md:py-5 rounded-full border border-fantasy-purple/20 text-[10px] md:text-base font-bold tracking-widest uppercase shadow-lg whitespace-nowrap">
+                        <div className="grid grid-cols-[1fr_auto_1fr] gap-2 md:gap-3 items-center w-full">
+                            <span className="text-right text-dark-gray">Your satisfaction</span>
+                            <span className="text-dark-gray">↔</span>
+                            <span className="text-left text-dark-gray">Our success</span>
+                        </div>
+                        <div className="grid grid-cols-[1fr_auto_1fr] gap-2 md:gap-3 items-center w-full text-fantasy-purple">
+                            <span className="text-right">Your success</span>
+                            <span>↔</span>
+                            <span className="text-left">Our satisfaction</span>
+                        </div>
                     </div>
                 </motion.div>
             </div>

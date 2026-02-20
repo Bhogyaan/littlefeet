@@ -38,13 +38,13 @@ export const HomePage = () => {
                             <span className="text-active-blue">Become Bright Futures</span>
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center justify-center p-4 md:p-8 bg-white rounded-3xl shadow-punchy border border-cloud-blue">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center justify-center p-4 md:p-6 bg-white rounded-3xl shadow-punchy border border-cloud-blue">
                             {/* Left Side */}
                             <div className="space-y-3 md:pr-12 md:border-r border-cloud-blue">
-                                <p className="text-medium-gray font-nunito uppercase tracking-tighter text-[10px] font-extrabold opacity-60">
+                                {/* <p className="text-medium-gray font-nunito uppercase tracking-tighter text-[10px] font-extrabold opacity-60">
                                     The Parent's Choice
-                                </p>
-                                <div className="flex flex-col items-center justify-center">
+                                </p> */}
+                                <div className="flex flex-col items-center justify-center gap-1">
                                     <span className="text-2xl md:text-3xl font-fredoka font-bold text-fantasy-purple italic">Your Satisfaction</span>
                                     <span className="text-magic-pink text-2xl">↔</span>
                                     <span className="text-2xl md:text-3xl font-fredoka font-bold text-magic-pink italic">Our Success</span>
@@ -53,10 +53,10 @@ export const HomePage = () => {
 
                             {/* Right Side */}
                             <div className="space-y-3 md:pl-12">
-                                <p className="text-medium-gray font-nunito uppercase tracking-tighter text-[10px] font-extrabold opacity-60">
+                                {/* <p className="text-medium-gray font-nunito uppercase tracking-tighter text-[10px] font-extrabold opacity-60">
                                     Our Commitment
-                                </p>
-                                <div className="flex flex-col items-center justify-center">
+                                </p> */}
+                                <div className="flex flex-col items-center justify-center gap-1">
                                     <span className="text-2xl md:text-3xl font-fredoka font-bold text-magic-pink italic">Your Success</span>
                                     <span className="text-fantasy-purple text-2xl">↔</span>
                                     <span className="text-2xl md:text-3xl font-fredoka font-bold text-fantasy-purple italic">Our Satisfaction</span>
@@ -64,7 +64,7 @@ export const HomePage = () => {
                             </div>
                         </div>
 
-                        <p className="mt-8 text-lg text-medium-gray font-nunito max-w-2xl mx-auto leading-relaxed">
+                        <p className="mt-12 text-lg text-medium-gray font-nunito max-w-2xl mx-auto leading-relaxed">
                             Looking for a place where your child feels loved and safe? Join our family in Salem and let their little dreams grow.
                         </p>
                     </motion.div>

@@ -49,7 +49,7 @@ export const FounderStory = () => {
                             viewport={{ once: true }}
                         >
                             <h3 className="text-2xl md:text-4xl font-bold font-fredoka text-fantasy-purple mb-3">
-                                Devarani Ramachandran
+                                Devarani Janarthanan
                             </h3>
                             <p className="text-lg md:text-xl text-medium-gray font-nunito leading-relaxed mb-4">
                                 A multifaceted soul: <span className="text-dark-gray font-semibold">IT Professional, Working Mother, and Holistic Healer.</span>

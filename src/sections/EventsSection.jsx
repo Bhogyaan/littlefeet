@@ -60,17 +60,17 @@ export const EventsSection = () => {
                         <p className="text-base md:text-lg text-medium-gray font-nunito max-w-2xl mb-3">
                             Our space is opened up for parents/grandparents/relatives/friends with limited seats. We encourage attendees to have fun-filled evenings/ weekends/ special occasion.
                         </p>
-                   <p className="text-base md:text-lg text-active-blue font-nunito font-semibold flex items-center">
-  You can actively participate either as an admirer or inspirer.
-  <span className="inline-flex items-center">
-    <img
-      src="/assets/imgs/1F60A.svg"
-      alt="smile"
-      className="w-9 h-9 object-contain"
-    />
-    Choice is Yours!
-  </span>
-</p>
+                        <div className="text-base md:text-lg text-active-blue font-nunito font-semibold flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1">
+                            <span>You can actively participate either as an admirer or inspirer.</span>
+                            <span className="flex items-center gap-2 whitespace-nowrap">
+                                <img
+                                    src="/assets/imgs/1F60A.svg"
+                                    alt="smile"
+                                    className="w-8 h-8 md:w-9 md:h-9 object-contain"
+                                />
+                                Choice is Yours!
+                            </span>
+                        </div>
                     </div>
                     {/* <Button variant="outline" className="flex items-center gap-2 px-6 py-3 text-base font-medium">
                         View Full Calendar <ArrowRight size={18} />
@@ -122,11 +122,62 @@ export const EventsSection = () => {
                                 </motion.div>
                             ))}
                         </div>
-                        <div className="text-center">
-                            <p className="text-xl md:text-2xl font-fredoka font-bold text-fantasy-purple mb-2 animate-bounce flex items-center justify-center gap-3">
-                                <Megaphone size={28} className="font-bold text-fantasy-purple" />
-                                So Stay tuned for the announcements!
-                            </p>
+                        <div className="text-center pt-12 pb-4">
+                            <motion.div
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, margin: "-50px" }}
+                                variants={{
+                                    hidden: { opacity: 0, y: 20 },
+                                    visible: {
+                                        opacity: 1,
+                                        y: 0,
+                                        transition: {
+                                            staggerChildren: 0.1,
+                                            delayChildren: 0.2
+                                        }
+                                    }
+                                }}
+                                className="inline-flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-6 sm:px-10 py-5 sm:py-8 bg-fantasy-purple/5 rounded-3xl border-2 border-dashed border-fantasy-purple/20"
+                            >
+                                <motion.div
+                                    variants={{
+                                        hidden: { opacity: 0, scale: 0.5 },
+                                        visible: { opacity: 1, scale: 1 }
+                                    }}
+                                    animate={{
+                                        rotate: [-10, 10, -10],
+                                        scale: [1, 1.1, 1]
+                                    }}
+                                    transition={{
+                                        rotate: { repeat: Infinity, duration: 2, ease: "easeInOut" },
+                                        scale: { repeat: Infinity, duration: 2, ease: "easeInOut" }
+                                    }}
+                                    className="bg-white p-3 rounded-full shadow-sm"
+                                >
+                                    <Megaphone size={32} className="text-fantasy-purple" />
+                                </motion.div>
+
+                                <div className="flex flex-wrap items-center justify-center gap-x-2">
+                                    {"So Stay tuned for the announcements!".split(" ").map((word, i) => (
+                                        <motion.span
+                                            key={i}
+                                            variants={{
+                                                hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
+                                                visible: { opacity: 1, y: 0, filter: "blur(0px)" }
+                                            }}
+                                            transition={{
+                                                type: "spring",
+                                                stiffness: 150,
+                                                damping: 12
+                                            }}
+                                            className="text-lg sm:text-xl md:text-2xl font-fredoka font-bold text-fantasy-purple"
+                                        >
+                                            {word}
+                                        </motion.span>
+                                    ))}
+                                </div>
+                            </motion.div>
                         </div>
                     </div>
                 )}

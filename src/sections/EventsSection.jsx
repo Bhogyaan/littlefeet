@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar as CalendarIcon, ArrowRight, Loader2, Megaphone } from 'lucide-react';
+import { Calendar as CalendarIcon, Smile, Loader2, Megaphone } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
 export const EventsSection = () => {
@@ -60,9 +60,17 @@ export const EventsSection = () => {
                         <p className="text-base md:text-lg text-medium-gray font-nunito max-w-2xl mb-3">
                             Our space is opened up for parents/grandparents/relatives/friends with limited seats. We encourage attendees to have fun-filled evenings/ weekends/ special occasion.
                         </p>
-                        <p className="text-base md:text-lg text-active-blue font-nunito font-semibold">
-                            You can actively participate either as an admirer or inspirer. <span className="text-2xl">😊</span> Choice is Yours!
-                        </p>
+                   <p className="text-base md:text-lg text-active-blue font-nunito font-semibold flex items-center">
+  You can actively participate either as an admirer or inspirer.
+  <span className="inline-flex items-center">
+    <img
+      src="/assets/imgs/1F60A.svg"
+      alt="smile"
+      className="w-9 h-9 object-contain"
+    />
+    Choice is Yours!
+  </span>
+</p>
                     </div>
                     {/* <Button variant="outline" className="flex items-center gap-2 px-6 py-3 text-base font-medium">
                         View Full Calendar <ArrowRight size={18} />
